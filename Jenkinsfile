@@ -5,7 +5,7 @@ pipeline {
     environment {
         // --- EDIT THESE VALUES ---
         DOCKERHUB_CREDENTIALS = 'dockerhub-credentials'
-        DOCKER_IMAGE_NAME     = 'your-dockerhub-username/my-node-app'
+        DOCKER_IMAGE_NAME     = '23it132/my-node-app'
         DEPLOY_SERVER_IP      = '3.84.137.70'
         DEPLOY_SERVER_USER    = 'ec2-user' // or 'ubuntu'
         SSH_CREDENTIALS       = 'ec2-ssh-key'
