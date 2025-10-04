@@ -6,7 +6,7 @@ pipeline {
         // --- EDIT THESE VALUES ---
         DOCKERHUB_CREDENTIALS = 'dockerhub-credentials'
         DOCKER_IMAGE_NAME     = 'your-dockerhub-username/my-node-app'
-        DEPLOY_SERVER_IP      = 'your.ec2.server.ip'
+        DEPLOY_SERVER_IP      = '3.84.137.70'
         DEPLOY_SERVER_USER    = 'ec2-user' // or 'ubuntu'
         SSH_CREDENTIALS       = 'ec2-ssh-key'
         GITHUB_REPO_URL       = 'https://github.com/KrishaThakor27IT/DevOps_CICD.git'
