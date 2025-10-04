@@ -15,8 +15,8 @@ pipeline {
         stage('Install & Test') { // Renamed for clarity
             steps {
                 // REMOVED: The redundant 'git' command was here.
-                sh 'npm install'
-                sh 'npm test'
+                bat 'npm install'
+        bat 'npm test'
             }
         }
         stage('Build & Push Docker Image') {
