@@ -9,7 +9,7 @@ pipeline {
         DEPLOY_SERVER_IP      = 'your.ec2.server.ip'
         DEPLOY_SERVER_USER    = 'ec2-user' // or 'ubuntu'
         SSH_CREDENTIALS       = 'ec2-ssh-key'
-        GITHUB_REPO_URL       = 'https://github.com/your-username/your-repo.git'
+        GITHUB_REPO_URL       = 'https://github.com/KrishaThakor27IT/DevOps_CICD.git'
     }
     stages {
         stage('Checkout & Test') {
