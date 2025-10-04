@@ -3,18 +3,18 @@ pipeline {
     agent any
     tools { nodejs 'NodeJS-18' }
     environment {
-        // --- EDIT THESE VALUES ---
+        // --- These are the values you have set ---
         DOCKERHUB_CREDENTIALS = 'dockerhub-credentials'
         DOCKER_IMAGE_NAME     = '23it132/my-node-app'
         DEPLOY_SERVER_IP      = '3.84.137.70'
-        DEPLOY_SERVER_USER    = 'ec2-user' // or 'ubuntu'
+        DEPLOY_SERVER_USER    = 'ec2-user'
         SSH_CREDENTIALS       = 'ec2-ssh-key'
         GITHUB_REPO_URL       = 'https://github.com/KrishaThakor27IT/DevOps_CICD.git'
     }
     stages {
-        stage('Checkout & Test') {
+        stage('Install & Test') { // Renamed for clarity
             steps {
-                git branch: 'main', url: GITHUB_REPO_URL
+                // REMOVED: The redundant 'git' command was here.
                 sh 'npm install'
                 sh 'npm test'
             }
